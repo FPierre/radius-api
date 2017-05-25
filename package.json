@@ -7,5 +7,6 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "graphql": "^0.9.6"
-  }
+  },
+  "devDependencies": {}
 }
