@@ -1,8 +1,8 @@
-import { GraphQLObjectType, GraphQLSchema, GraphQLInt } from 'graphql/lib/type'
+const { GraphQLObjectType, GraphQLSchema, GraphQLInt } = require('graphql')
 
 const count = 0
 
-const schema = new GraphQLSchema({
+exports.schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'RootQueryType',
     fields: {
@@ -15,5 +15,3 @@ const schema = new GraphQLSchema({
     }
   })
 })
-
-export default schema
