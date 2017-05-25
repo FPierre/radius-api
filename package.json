@@ -1,0 +1,6 @@
+{
+  "name": "radius-api",
+  "version": "0.0.1",
+  "main": "server.js",
+  "license": "MIT"
+}
