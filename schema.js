@@ -1,6 +1,6 @@
 const { GraphQLObjectType, GraphQLSchema, GraphQLInt } = require('graphql')
 
-const count = 0
+let count = 0
 
 exports.schema = new GraphQLSchema({
   query: new GraphQLObjectType({
@@ -8,9 +8,7 @@ exports.schema = new GraphQLSchema({
     fields: {
       count: {
         type: GraphQLInt,
-        resolve: function () {
-          return count
-        }
+        resolve: () => count
       }
     }
   })
