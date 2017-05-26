@@ -11,8 +11,8 @@ db.once('open', () => { console.log('successful connection') })
 const locationSchema = mongoose.Schema({
   lat: { type: Number, required: true },
   lng: { type: Number, required: true },
-  created_at: Date,
-  updated_at: Date
+  createdAt: { type: Date default: Date.now },
+  updatedAt: { type: Date default: Date.now }
 })
 
 const Location = mongoose.model('Location', locationSchema)
