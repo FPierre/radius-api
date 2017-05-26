@@ -8,7 +8,21 @@ export default new GraphQLSchema({
     fields: {
       count: {
         type: GraphQLInt,
+        description: 'The count!',
         resolve: () => count
+      }
+    }
+  }),
+  mutation: new GraphQLObjectType({
+    name: 'RootMutationType',
+    fields: {
+      updateCount: {
+        type: GraphQLInt,
+        description: 'Updates the count',
+        resolve: () => {
+          count += 1
+          return count
+        }
       }
     }
   })
