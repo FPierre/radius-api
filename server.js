@@ -1,7 +1,7 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const { graphql } = require('graphql')
-const schema = require('./schema')
+import express from 'express'
+import bodyParser from 'body-parser'
+import { graphql } from 'graphql'
+import schema from './schema'
 
 const app = express()
 app.use(bodyParser.text({ type: 'application/graphql' }))

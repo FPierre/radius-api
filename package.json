@@ -1,12 +1,13 @@
 {
   "name": "radius-api",
   "version": "0.0.1",
-  "main": "server.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node index.js"
   },
   "dependencies": {
+    "babel-register": "^6.24.1",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "graphql": "^0.9.6"
